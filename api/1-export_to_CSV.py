@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""module is to be documented"""
 
+"""Export to CSV"""
 import requests
 from sys import argv
 
