@@ -31,4 +31,4 @@ if __name__ == '__main__':
                         '"' + user_name + '",' +
                         '"' + str(todo_status) + '",' +
                         '"' + todo_title + '",' + "\n")
-             for todo in todos_response]
+             for todo in todos_response.format(q)]
