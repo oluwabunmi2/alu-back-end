@@ -17,15 +17,15 @@ if __name__ == '__main__':
     completed_tasks = 0
 
     for item in todos_response:
-        if item.get('completed'):
+        if item.get("completed"):
             completed_tasks += 1
 
     user_id = str(employee_id)
-    user_name = user_response.get('username')
+    user_name = user_response.get("username")
 
     for todo in todos_response:
-        todo_title = todo.get('title')
-        todo_status = todo.get('completed')
+        todo_title = todo.get("title")
+        todo_status = todo.get("completed")
         with open(str(user_id) + '.csv', 'w') as file:
             [file.write('"' + user_id + '",' +
                         '"' + user_name + '",' +
