@@ -27,9 +27,10 @@ if __name__ == '__main__':
     for todo in todos_response:
         todo_title = todo.get("title")
         todo_status = todo.get("completed")
-        with open(str(user_id) + '.csv', 'w') as file:
-            [file.write('"' + user_id + '",' +
+
+        with open(str(employee_id) + '.csv', "w") as file:
+            [file.write('"' + str(employee_id) + '",' +
                         '"' + user_name + '",' +
-                        '"' + str(todo_status) + '",' +
-                        '"' + todo_title + '",' + "\n")
-             for todo in todos_response]
+                        '"' + str(task["completed"]) + '",' +
+                        '"' + task["title"] + '",' + "\n")
+             for task in todos_response]
