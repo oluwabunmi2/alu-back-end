@@ -32,4 +32,3 @@ if __name__ == '__main__':
                         '"' + str(todo_status) + '",' +
                         '"' + todo_title + '",' + "\n")
              for todo in todos_response]
-            
